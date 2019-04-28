@@ -14,6 +14,7 @@ public class JsonTableColumn {
 
 
 
+
     public List<DictColumnName> getColumns() {
         return columns;
     }

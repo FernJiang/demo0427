@@ -27,6 +27,7 @@ public class HelloWorld {
     @RequestMapping(value = "/print")
     public String print(HttpServletRequest request, HttpSession session)
     {
+
         DictTableName dictTable = new DictTableName();
         String inputjson = request.getParameter("inputjson");
         JsonTableColumn jsonTable = JSON.parseObject(inputjson, new TypeReference<JsonTableColumn>(){});

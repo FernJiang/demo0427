@@ -7,6 +7,7 @@ import com.alibaba.fastjson.JSON;
  */
 
 public class DictTableName {
+
     String tableName;
     String tableTitle;
     String tableMemo;
