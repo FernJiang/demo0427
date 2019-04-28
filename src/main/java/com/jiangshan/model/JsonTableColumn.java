@@ -13,8 +13,6 @@ public class JsonTableColumn {
     private List<DictColumnName> columns;
 
 
-
-
     public List<DictColumnName> getColumns() {
         return columns;
     }

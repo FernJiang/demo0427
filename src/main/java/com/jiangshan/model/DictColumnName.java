@@ -10,7 +10,6 @@ public class DictColumnName {
     String columnType;
     String columnMemo;
 
-
     public String getTableName() {
         return tableName;
     }
