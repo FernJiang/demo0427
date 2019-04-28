@@ -1,0 +1,22 @@
+server:
+  port: 80
+  servlet:
+    session:
+      timeout: 60m
+spring:
+  #controller
+  thymeleaf:
+    prefix: classpath:/
+    suffix: .html
+    cache: false
+  data:
+    mongodb:
+      uri: mongodb://spider:spider987COM@10.80.91.150:27017,10.80.92.150:27017,10.80.93.150:27017/spider?readPreference=secondary
+      database: spider
+    elasticsearch:
+      cluster-nodes: 10.80.88.151:9200
+  resources:
+    static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/, classpath:/templates/
+  devtools:
+    restart:
+      additional-paths: src/main/java

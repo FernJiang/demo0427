@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="text-c mt-10">
+    <table class="table table-border table-bordered table-hover table-bg table-sort">
+        <thead>
+        <tr class="text-c">
+            <th width="80">表名</th>
+            <th width="80">字段名</th>
+            <th width="80">中文名</th>
+            <th width="80">说明</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+<form id="insertAd">
+    <div>
+        <textarea id="inputjson"></textarea>
+        <!--<div contenteditable="true"></div>-->
+        <button type="button" class="btn btn-success radius" onclick="a()">提交</button>
+    </div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script type="application/javascript">
+    function a() {
+        var inputjson = $("#inputjson").val();
+        console.log($.ajax)
+        $.ajax({
+            url:"/print",
+            data: {
+                "inputjson": inputjson,
+            },
+            success: function () {
+                alert("修改成功");
+//                window.location.reload()
+            }
+        });
+    }
+</script>
+
+
+</body>
+</html>
